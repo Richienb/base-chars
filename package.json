@@ -1,6 +1,6 @@
 {
     "name": "base-chars",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Characters for use in numerical bases.",
     "repository": "https://github.com/Richienb/base-chars.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
