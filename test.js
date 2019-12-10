@@ -1,13 +1,8 @@
 import test from "ava"
-import theModule from "."
+import is from "@sindresorhus/is"
+import baseChars from "."
 
 test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
-
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+    t.true(is.plainObject(baseChars))
+    t.true(is.string(baseChars[10]))
 })

@@ -1,14 +1,18 @@
+import { bases } from "basea"
+
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * The characters for use in numerical bases.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const baseChars = require("base-chars");
+ *
+ * baseChars[10];
+ * //=> '0123456789'
+ *
+ * baseChars[16]
+ * //=> '0123456789abcdef'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare const baseChars: typeof bases;
 
-export = theModule;
+export = baseChars;

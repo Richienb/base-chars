@@ -1,41 +1,31 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Base chars [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/base-chars/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/base-chars)
 
-My awesome module.
+Characters for use in numerical bases.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/base-chars.png)](https://npmjs.com/package/base-chars)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install base-chars
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const baseChars = require("base-chars");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+baseChars[10];
+//=> '0123456789'
+
+baseChars[16]
+//=> '0123456789abcdef'
 ```
 
 ## API
 
-### theModule(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
+### baseChars
 
 Type: `object`
 
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The characters for use in numerical bases.
